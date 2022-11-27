@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header {
+    height: 56px;
+    background-color: blue;
+    width: calc(100%-200px);
+}
+
+.siderbar {
+    height: calc(100vh-56px);
+    width: 200px;
+    background-color: red;
+}
+
+.content {
+
+}
+
+.footer {
+
+}
+

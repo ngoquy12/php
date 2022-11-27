@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <form action="./add_employee.php" method="post" class="form">
+                <h3 class="form-heading">THÊM MỚI NHÂN VIÊN</h3>
+                <table class="table">
+                    <tr class="table-tr">
+                        <td class="table-td">
+                            <label class="form-lable" for="code">Mã nhân viên</label>
+                        </td>
+                        <td class="table-td">
+                            <input class="form-input" type="text"
+                                name="employee_code" id="code">
+                        </td>
+                    </tr>
+                    <tr class="table-tr">
+                        <td class="table-td">
+                            <label class="form-lable" for="name">Tên nhân viên</label>
+                        </td>
+                        <td class="table-td">
+                            <input class="form-input" type="text"
+                                name="employee_name" id="name">
+                        </td>
+                        <tr class="table-tr">
+                            <td class="table-td">
+                                <label class="form-lable" for="dob">Ngày sinh</label>
+                            </td>
+                            <td class="table-td">
+                                <input class="form-input" type="date"
+                                    name="dob">
+                            </td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="table-td">
+                                <label class="form-lable" for="gender">Giới tính</label>
+                            </td>
+                            <td class="table-td">
+                                <label class="form-lable" for="gender">Nam</label>
+                                <input class="form-input" type="radio"
+                                    name="gender" id="male" value="male"
+                                    checked>
+                                <label class="form-lable" for="gender">Nữ</label>
+                                <input class="form-input" type="radio"
+                                    name="gender" id="female" value="female">
+                            </td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="table-td">
+                                <label class="form-lable" for="address">Địa chỉ</label>
+                            </td>
+                            <td class="table-td">
+                                <input class="form-input" type="text"
+                                    name="address">
+                            </td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="table-td">
+                                <label class="form-lable" for="address">Số điện
+                                    thoại</label>
+                            </td>
+                            <td class="table-td">
+                                <input class="form-input" type="text"
+                                    name="phone">
+                            </td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="table-td">
+                                <label class="form-lable" for="bank_account">Tài
+                                    khoản ngân hàng</label>
+                            </td>
+                            <td class="table-td">
+                                <input class="form-input" type="text"
+                                    name="bank_account">
+                            </td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="table-td">
+                                <label class="form-lable" for="bank_name">Tên
+                                    ngân hàng</label>
+                            </td>
+                            <td class="table-td">
+                                <input class="form-input" type="text"
+                                    name="bank_name">
+                            </td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="table-td">
+                                <label class="form-lable" for="bank_branch">Chi
+                                    nhánh ngân hàng</label>
+
+                            </td>
+                            <td class="table-td">
+                                <input class="form-input" type="text"
+                                    name="bank_branch">
+                            </td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="table-td">
+                                <!-- <button name="btnSave" class="button">Thêm</button> -->
+                                <input type="submit" value="Thêm"
+                                    name="btnSave">
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <style>
+
+        body{
+            background-color: #f5eaea;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .form {
+            border: 1px solid #333;
+            padding: 20px;
+            position: absolute;
+            min-height: 400px;
+            background-color: #fff;
+        }
+
+        .form-heading {
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        tr {
+            padding-bottom: 30px;
+        }
+    </style>
+        </body>
+    </html>
